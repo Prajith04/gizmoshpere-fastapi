@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block style %}
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h2 {
+            margin-top: 40px;
+        }
+        .blog-post {
+            margin-bottom: 40px;
+            border: 1px solid #ffffff; /* added white border */
+            border-radius: 10px; /* added curved corners */
+            box-shadow: 0px 0px 10px rgba(255, 255, 255,0.8); /* added light orange box shadow */
+            padding: 20px; /* added padding to create a box effect */
+            background-opacity:0; /* added a light gray background color */
+        }
+        .blog-post:hover{
+            box-shadow: 0px 0px 10px rgba(255, 165, 0,0.8);  
+        }
+        .container a{
+            text-decoration: none;
+                        color: #ffffff;
+        }
+        .blog-post h3 {
+            margin-bottom: 10px;
+        }
+        .blog-post p {
+            margin-bottom: 10px;
+        }
+{% endblock style %}
+{% block content %}
+<body>
+    <header>
+        <h1>GizmoSphere-Blog</h1>
+        <p>Your Destination for the Latest Gadgets</p>
+        <nav>
+            <div class="nav-item">
+                <a href="/">Home</a>
+            </div>
+            <div class="nav-item">
+                <a href="#shop">Shop</a>
+                <div class="sub-menu">
+                    <a href="wearables">Wearables</a>
+                    <a href="smartphones">Smartphones</a>
+                    <a href="laptops">Laptops</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="contact-us">Contact Us</a>
+            </div>
+            <div class="nav-item">
+                <a href="about-us">About Us</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <a href="blog1"><div class="blog-post">
+            <h3>IQOO Z9 series</h3>
+            <p>Posted on January 1, 2024</p>
+            <p>iQOO Z9 series debuts: Z9 Turbo leads the pack with SD 8s Gen 3 and 6,000 mAh battery</p>
+        </div></a>
+        <a href="blog2"><div class="blog-post">
+            <h3>IQOO Z6 Series</h3>
+            <p>Posted on February 1, 2024</p>
+            <p>iQOO introduces Z6 Pro and Z6 44W</p>
+        </div></a>
+{% endblock content %}
+    

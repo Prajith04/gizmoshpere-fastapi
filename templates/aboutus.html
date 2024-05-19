@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block style %}
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h2 {
+            margin-top: 40px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input,
+        textarea,
+        button {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+{% endblock style %}
+{% block content %}
+    <header>
+        <h1>GizmoSphere-About Us</h1>
+        <p>Your Destination for the Latest Gadgets</p>
+        <nav>
+            <div class="nav-item">
+                <a href="/">Home</a>
+            </div>
+            <div class="nav-item">
+                <a href="#shop">Shop</a>
+                <div class="sub-menu">
+                    <a href="wearables">Wearables</a>
+                    <a href="smartphones">Smartphones</a>
+                    <a href="laptops">Laptops</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a href="blog">Blog</a>
+            </div>
+            <div class="nav-item">
+                <a href="contact-us">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>About GizmoSphere</h2>
+        <p>GizmoSphere is your one-stop destination for the latest gadgets and electronics. We strive to bring you the best products and exceptional customer service.</p>
+    </div>
+{% endblock content %}

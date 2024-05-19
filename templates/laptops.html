@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block style %}
+.product  {
+    width: 300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    border: 1px solid #ffffff; /* added white border */
+    border-radius: 10px; /* added curved corners */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255,0.8); /* added light orange box shadow */
+    padding: 20px; /* added padding to create a box effect */
+    background-opacity:0;/* added a light gray background color */
+}
+.product:hover{
+    box-shadow: 0px 0px 10px rgba(255, 165, 0,0.8);  
+}
+.product img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height:25%;
+}
+.product h3 {
+    margin-bottom: 10px;
+    text-align:center;
+}
+.product p {
+    margin-bottom: 10px;
+}
+.product button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.product button:hover{
+    background-color:#ff6600;
+}
+a {
+    text-decoration: none;
+     color: #ffffff;
+}
+{% endblock style %}
+{% block content %}
+<header>
+    <h1>GizmoSphere-Laptops</h1>
+    <p>Your Destination for the Latest Gadgets</p>
+</header>
+<nav>
+    <div class="nav-item">
+        <a href="/">Home</a>
+    </div>
+    <div class="nav-item">
+        <a href="#shop">Shop</a>
+        <div class="sub-menu">
+            <a href="wearables">Wearables</a>
+            <a href="smartphones">Smartphones</a>
+        </div>
+    </div>
+    <div class="nav-item">
+        <a href="blog">Blog</a>
+    </div>
+    <div class="nav-item">
+        <a href="about-us">About Us</a>
+    </div>
+    <div class="nav-item">
+        <a href="contact-us">Contact Us</a>
+    </div>
+</nav>
+<div class="container">
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/81UWgnVKDBL._SX679_.jpg" alt="Laptop 1">
+        <h3>ASUS TUF Gaming F15</h3>
+        <p>ASUS TUF Gaming F15, 15.6"(39.62 cms) FHD 144Hz, Intel Core i7-11800H 11th Gen, 4GB NVIDIA GeForce RTX 3050 Ti, Gaming Laptop (16GB/512GB SSD/Windows 11/90WHrs Battery/Black/2.30 Kg), FX506HE-HN382W</p>
+        <h4>₹67,990</h4>
+        <button><a href="/buy?product_name=ASUS TUF Gaming F15&price=67990">Buy</a></button>
+    </div>
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/91zVSkGGZbS._SX679_.jpg" alt="Laptop 2">
+        <h3>ASUS TUF Gaming A15</h3>
+        <p>ASUS TUF Gaming A15, 15.6" (39.62 cms) FHD 144Hz, AMD Ryzen 7 4800H, 4GB GeForce RTX 3050 Graphics, Gaming Laptop (16GB/512GB SSD/90WHrs Battery/Windows 11/Black/2.3 kg), FA506ICB-HN075W</p>
+        <h4> ₹81,000</h4>
+        <button><a href="/buy?product_name=ASUS TUF Gaming A15&price=81000">Buy</a></button>
+    </div>
+    <!-- Add more products as needed -->
+</div>
+{% endblock content %}

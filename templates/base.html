@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GizmoSphere - Your Destination for Gadgets</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#141414;
+            color:#fff;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background-opacity:0;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-opacity:0;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+            padding:5px;
+        }
+
+        nav a:hover,nav .sub-menu a:hover{
+            color: #ff6600; /* Orange color on hover */
+        }
+        nav a:hover{
+            box-shadow: 0 0 5px rgba(255, 165, 0, 0.8);
+            padding:5px;
+            border-radius:10px;
+        }
+
+        nav .nav-item {
+            display: inline-block;
+            position: relative;
+            padding:5px;
+            border-radius:10px;
+        }
+
+        nav .sub-menu {
+            display: none;
+            background-color:#141414;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            border:0.5px solid #ffffff;
+            border-radius: 10px;
+        }
+
+        nav .sub-menu a {
+            display: block;
+            padding: 8px 16px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav .nav-item:hover .sub-menu {
+            display: block;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-opacity:0;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        /* Additional Styles */
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        /* Add more styles as needed */
+        {% block style %}
+        {% endblock style %}
+    </style>
+</head>
+<body>
+  {% block content %}
+  {% endblock content %}
+    <footer>
+        <p>&copy; 2024 GizmoSphere. All rights reserved.</p>
+    </footer>
+</body>
+</html>
